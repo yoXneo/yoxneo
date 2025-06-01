@@ -114,59 +114,40 @@ h1, h2 {
   margin-right: auto;
 }
 
-/* Adjust the button with image + text vertically stacked */
+/* Remove bulky button styling from this specific image button */
 .memory-card-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 100px;
-  text-align: center;
-  padding: 1rem;
+  display: inline-block;
+  text-decoration: none;
 }
 
-/* Responsive layout tweaks to prevent wrapping oddities */
-nav {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-.memory-card-btn {
-  padding: 0;
-  border: none;
-  background: none;
-  box-shadow: none;
-}
-
+/* Keep the wrapper tight */
 .memory-card-image-wrapper {
   position: relative;
   width: 72px;
-  height: auto;
+  margin: 0 auto;
 }
 
+/* Image styling */
 .icon-img {
   width: 100%;
   height: auto;
   display: block;
-  image-rendering: pixelated;
 }
 
+/* Overlay label inside image */
 .memory-card-label {
   position: absolute;
-  bottom: 4px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 0.75rem;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.65rem;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
   color: #000;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 2px 4px;
   border: 1px solid #000;
   border-radius: 4px;
-  margin: 0 auto;
-  width: fit-content;
-  max-width: 90%;
-  transform: translateY(50%);
+  text-align: center;
+  white-space: nowrap;
 }
