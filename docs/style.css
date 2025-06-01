@@ -14,7 +14,6 @@ h1, h2 { text-shadow: none; color: #000; }
   transition: all 0.3s ease;
 }
 .btn:hover {
-  background-color: #ffa45b;
+  background-color: #00b77e;
   color: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
+  box-shadow: 0 4px 12px rgba(
