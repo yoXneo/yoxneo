@@ -84,3 +84,20 @@ h1, h2 {
   margin: 1rem auto; /* Center horizontally */
   object-fit: contain;
 }
+.image-btn {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  box-shadow: none;
+}
+
+.image-btn:hover {
+  transform: scale(1.05);
+}
+
+.icon-img {
+  width: 64px;   /* adjust to taste */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
