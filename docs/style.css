@@ -51,3 +51,29 @@ h1, h2 {
   transform: scale(1.05);
   box-shadow: 2px 2px 0 #000;
 }
+
+.home-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+}
+
+.home-btn a {
+  background-color: #f0f0f5;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 3px 3px 0 #000;
+  display: inline-block;
+}
+
+.home-btn a:hover {
+  background-color: #b6fcb6;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 0 #000;
+}
