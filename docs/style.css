@@ -101,3 +101,33 @@ h1, h2 {
   display: block;
   margin: 0 auto;
 }
+/* Style image inside button */
+.icon-img {
+  width: 64px;
+  height: auto;
+  max-height: 72px;
+  margin-bottom: 0.5rem;
+  image-rendering: pixelated;
+  vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Adjust the button with image + text vertically stacked */
+.memory-card-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive layout tweaks to prevent wrapping oddities */
+nav {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
