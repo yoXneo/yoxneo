@@ -78,8 +78,9 @@ h1, h2 {
   box-shadow: 2px 2px 0 #000;
 }
 .logo {
-  max-width: 200px;
-  height: auto;
+  width: 150px;      /* Fixed width */
+  height: auto;      /* Maintain aspect ratio */
   display: block;
-  margin: 1rem auto;
+  margin: 1rem auto; /* Center horizontally */
+  object-fit: contain;
 }
