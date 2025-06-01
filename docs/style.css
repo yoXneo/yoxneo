@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   background-color: #ffffff;
   color: #000000;
@@ -15,6 +16,7 @@ h1, h2 {
   margin: 2rem 0 1rem;
 }
 
+/* Section Styles */
 .section {
   padding: 2rem 1rem;
   border: 2px dashed #000;
@@ -30,6 +32,7 @@ h1, h2 {
   text-align: center;
 }
 
+/* Button Styles */
 .btn {
   background-color: #f0f0f5;
   color: #000;
@@ -52,6 +55,7 @@ h1, h2 {
   box-shadow: 2px 2px 0 #000;
 }
 
+/* Home Button */
 .home-btn {
   position: fixed;
   top: 1rem;
@@ -77,64 +81,42 @@ h1, h2 {
   transform: scale(1.05);
   box-shadow: 2px 2px 0 #000;
 }
+
+/* Logo */
 .logo {
-  width: 350px;      /* Fixed width */
-  height: auto;      /* Maintain aspect ratio */
+  width: 350px;
+  height: auto;
   display: block;
-  margin: 1rem auto; /* Center horizontally */
+  margin: 1rem auto;
   object-fit: contain;
 }
-.image-btn {
-  background: none;
-  border: none;
-  padding: 0.5rem;
-  box-shadow: none;
+
+/* Image-Based Button: Memory Card */
+.memory-card-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  width: 72px;
+  margin: 0.5rem;
 }
 
-.image-btn:hover {
-  transform: scale(1.05);
+.memory-card-image-wrapper {
+  position: relative;
+  width: 100%;
 }
 
 .icon-img {
-  width: 64px;   /* adjust to taste */
+  width: 72px;
   height: auto;
-  display: block;
-  margin: 0 auto;
-}
-/* Style image inside button */
-.icon-img {
-  width: 64px;
-  height: auto;
-  max-height: 72px;
-  margin-bottom: 0.5rem;
-  image-rendering: pixelated;
-  vertical-align: middle;
+  max-height: 80px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  image-rendering: pixelated;
+  vertical-align: middle;
 }
 
-/* Remove bulky button styling from this specific image button */
-.memory-card-btn {
-  display: inline-block;
-  text-decoration: none;
-}
-
-/* Keep the wrapper tight */
-.memory-card-image-wrapper {
-  position: relative;
-  width: 72px;
-  margin: 0 auto;
-}
-
-/* Image styling */
-.icon-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Overlay label inside image */
 .memory-card-label {
   position: absolute;
   bottom: 2px;
@@ -150,4 +132,17 @@ h1, h2 {
   border-radius: 4px;
   text-align: center;
   white-space: nowrap;
+}
+
+/* Optional: Keep all image-buttons hover-friendly */
+.image-btn {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  box-shadow: none;
+  transition: transform 0.1s ease-in-out;
+}
+
+.image-btn:hover {
+  transform: scale(1.05);
 }
